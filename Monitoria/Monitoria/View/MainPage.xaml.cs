@@ -15,6 +15,7 @@ namespace Monitoria
             InitializeComponent();
             this.Master = new Menu();
             this.Detail = new NavigationPage(new Home());
+            App.MasterDetail = this;
         }
     }
 }

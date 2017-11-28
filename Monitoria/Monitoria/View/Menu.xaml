@@ -3,11 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Monitoria.View.Menu"
              Title="Menu">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+    <StackLayout Orientation="Vertical" >
+        <StackLayout BackgroundColor="Green" HeightRequest="80">
+            <Label Text="Monitoria Amiga" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" FontSize="20"  TextColor="White"/>
         </StackLayout>
-    </ContentPage.Content>
+
+        <ListView x:Name="LvMenu" ItemsSource="{Binding ListaMenu}" ItemSelected="SelecionaItem">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ImageCell ImageSource="{Binding Icone}" Text="{Binding Titulo}" TextColor="Black"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </StackLayout>
+
 </ContentPage>

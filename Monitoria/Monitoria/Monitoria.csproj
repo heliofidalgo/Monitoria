@@ -38,6 +38,20 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Model\Curso.cs" />
+    <Compile Include="Model\MenuLista.cs" />
+    <Compile Include="Model\pessoa.cs" />
+    <Compile Include="ViewModel\CadastraMonitoriaViewModel.cs" />
+    <Compile Include="ViewModel\ConfirmaCursoViewModel.cs" />
+    <Compile Include="ViewModel\HomeViewModel.cs" />
+    <Compile Include="ViewModel\MateriasViewModel.cs" />
+    <Compile Include="ViewModel\MenuViewModel.cs" />
+    <Compile Include="View\CadastraMonitoria.xaml.cs">
+      <DependentUpon>CadastraMonitoria.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConfirmaCurso.xaml.cs">
+      <DependentUpon>ConfirmaCurso.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
@@ -45,6 +59,9 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Materias.xaml.cs">
+      <DependentUpon>Materias.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
     </Compile>
@@ -74,8 +91,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
-    <Folder Include="ViewModel\" />
+    <EmbeddedResource Include="View\CadastraMonitoria.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\Menu.xaml">
@@ -85,6 +104,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\Home.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\ConfirmaCurso.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\Materias.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Monitoria.View.ConfirmaCurso">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Titulo Monitoria: "/>
+            <Label Text="Instrutor da Monitoria: "/>
+            <Label Text="Quantidade de Alunos: "/>
+            <Label Text="Local da Monitoria: "/>
+            <Label Text="Horário da Monitoria: "/>
+            <Label Text="Descrição da Monitoria"/>
+           
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Editar" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Confirmar" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

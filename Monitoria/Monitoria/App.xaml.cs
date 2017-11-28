@@ -5,6 +5,8 @@ namespace Monitoria
 {
     public partial class App : Application
     {
+        // tem a funcao de
+        public static MasterDetailPage MasterDetail { get; set; }
         public App()
         {
             InitializeComponent();

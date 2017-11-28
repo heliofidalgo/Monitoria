@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Monitoria.View.CadastraMonitoria" Title="CadastroMonitoria">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <Label Text="Titulo Monitoria: "/>
+            <Entry Placeholder="Titulo da Monitoria"/>
+            <Label Text="Instrutor da Monitoria: "/>
+            <Entry Placeholder="Nome do Instrutor"/>
+            <Label Text="Quantidade de Alunos: "/>
+            <Entry Placeholder="Numero Max. de Alunos" Keyboard="Numeric"/>
+            <Label Text="Local da Monitoria: "/>
+            <Entry Placeholder="Local da Monitoria"/>
+            <Label Text="Horário: "/>
+            <Entry Placeholder="Horário da Monitoria"/>
+            <Label Text="Descrição Monitoria: "/>
+            <Entry Placeholder="Descreva sua monitoria"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Cadastrar" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Cancelar" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
